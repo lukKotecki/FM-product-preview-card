@@ -22,10 +22,17 @@ body{
     width: 375px;
     border-radius: 1em;
 }
-img{
-    width: 100%;
+.image{
+    height: 300px;
+    background-image: url('../images/image-product-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+}
+.flex-column{
+    width: 100%;
 }
 .wrapper{
     width:85%;
@@ -36,9 +43,16 @@ img{
     text-decoration-line: line-through;
 }
 
-
-@media (width >= 475px){
+@media (width >= 675px){
     .background-image{
         background-image: url('../assets/images/background-pattern-desktop.svg');
+    }
+    .card{
+        display: flex;
+    }
+    .image{  
+        background-image: url('../images/image-product-desktop.jpg');
+        border-bottom-left-radius: 1em;
+        border-top-right-radius: 0em;
     }
 }
